@@ -54,7 +54,7 @@
     }
     .text-wedding p {
    
-        font-size: 34px !important;     
+        font-size: 30px !important;     
         color: #000 !important;
 
         font-family: 'Fira Code', monospace;
@@ -110,7 +110,7 @@
 
     .nama {
         /* border: 1px solid red; */
-        margin-top: 50vh;
+        margin-top: 60vh;
     }
 
     h4.intial {
