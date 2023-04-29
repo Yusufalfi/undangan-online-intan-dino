@@ -48,7 +48,7 @@
     .text-wedding {
  
         margin-top: 10px;
-        letter-spacing: 2px !important;
+   
         font-family: 'Fira Code', monospace;
        
     }
@@ -56,7 +56,7 @@
    
         font-size: 34px !important;     
         color: #000 !important;
-        letter-spacing: 2px !important;
+
         font-family: 'Fira Code', monospace;
       
     }
@@ -138,8 +138,8 @@
     .simply-countdown {
         /* coutndown blocks */
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
         background: rgba(241, 78, 149, 0.8);
         /* margin: 0 4px; */
         -webkit-border-radius: 50%;
