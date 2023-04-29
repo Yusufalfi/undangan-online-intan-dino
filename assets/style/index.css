@@ -147,7 +147,7 @@
         -ms-border-radius: 50%;
         border-radius: 50%;
         /* position: relative; */
-        /* animation: pulse 1s ease infinite; */
+        animation: pulse 1s ease infinite;
     
         color: #fff !important;
         font-size: 13px;
@@ -155,6 +155,18 @@
         text-align: center;
 
         
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
       .simply-countdown span {
