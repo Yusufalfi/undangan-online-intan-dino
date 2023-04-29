@@ -174,6 +174,52 @@
         /* padding-top: 30px !important; */
 
       }
+
+
+
+/* content -page */
+      .content-page {
+        margin-top: -36px;
+        /* border: 1px solid red; */
+        background-color: #777;
+      }
+
+      .ass {
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Fira Code', monospace;
+      }
+      .sambutan {
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Fira Code', monospace;
+      }
+
+      .img-fluid {
+        width: 280px;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(129, 123, 123, 0.993);
+      }
+
+      h3.name {
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Fira Code', monospace;
+      }
+
+      p.anak {
+        /* border: 1px solid red; */
+        color: #fff;
+        font-size: 13px;
+        font-family: 'Fira Code', monospace;
+      }
     
       
 }
