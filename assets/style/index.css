@@ -48,13 +48,16 @@
     .text-wedding {
  
         margin-top: 10px;
-        font-family: "Sacramento", Arial, serif;
+        letter-spacing: 2px !important;
+        font-family: 'Fira Code', monospace;
        
     }
     .text-wedding p {
    
         font-size: 34px !important;     
         color: #000 !important;
+        letter-spacing: 2px !important;
+        font-family: 'Fira Code', monospace;
       
     }
     .text-wedding h3 {
@@ -62,6 +65,8 @@
         color: #000 !important;
         font-weight: 600;
         position: relative;
+
+        font-family: 'Fira Code', monospace;
         
     }
 
@@ -75,6 +80,8 @@
         font-size: 20px !important;
         color: #000 !important;
         font-weight: bold;
+       
+        font-family: 'Fira Code', monospace;
        
     }
 
