@@ -1,0 +1,160 @@
+.home-bg {
+    /* border: 1px solid red; */
+    background-image: url(/assets/image/jawa-2.jpg);
+    height: 100vh; 
+    background-position: center; 
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.text-wedding {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    font-family: "Sacramento", Arial, serif;
+   
+}
+.text-wedding p {
+    /* border: 1px solid green; */
+   
+    font-size: 34px !important;
+    color: #F14E95 !important
+}
+.text-wedding h3 {
+    /* border: 1px solid green; */
+    /* margin-top: -20px; */
+    font-size: 40px !important;
+    color: #F14E95 !important;
+    font-weight: 600;
+    
+}
+
+
+
+
+/* mode hp */
+@media (max-width: 768px) { 
+    .home-bg {
+    /* height: 100vh; */
+    width: 100% !important;
+      /* border: 1px solid green; */
+      background:url("/assets/image/jawa-figma.png") no-repeat;
+      background-size: cover;
+     
+    
+    }
+
+    .text-wedding {
+ 
+        margin-top: 10px;
+        font-family: "Sacramento", Arial, serif;
+       
+    }
+    .text-wedding p {
+   
+        font-size: 34px !important;     
+        color: #000 !important;
+      
+    }
+    .text-wedding h3 {
+        font-size: 40px !important;
+        color: #000 !important;
+        font-weight: 600;
+        position: relative;
+        
+    }
+
+    .garis {
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        width: 50%;
+    }
+    p.tanggal {
+        font-size: 20px !important;
+        color: #000 !important;
+        font-weight: bold;
+       
+    }
+
+    .link-open a {
+      
+        padding: 13px 20px;
+        background-color: #000;
+        color: aliceblue;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+        
+    }
+
+
+
+
+
+    .bg-cover {
+        background-attachment: static;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .nama {
+        /* border: 1px solid red; */
+        margin-top: 50vh;
+    }
+
+    h4.intial {
+        color: #fff ;
+        letter-spacing: 2px !important;
+        font-family: 'Fira Code', monospace;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    hr.garis-nama {
+        /* color: #fff; */
+        border: 1px solid #fff;
+        width: 70%;
+    }
+
+    .bagian {
+        color: white;
+        font-family: 'Fira Code', monospace;
+        font-size: 17px;
+        text-shadow: 2px 2px #000;
+       
+    }
+
+    .simply-countdown {
+        /* coutndown blocks */
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        background: rgba(241, 78, 149, 0.8);
+        /* margin: 0 4px; */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        /* position: relative; */
+        /* animation: pulse 1s ease infinite; */
+    
+        color: #fff !important;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+
+        
+      }
+
+      .simply-countdown span {
+       font-size: 25px;
+        /* padding-top: 30px !important; */
+
+      }
+    
+      
+}
