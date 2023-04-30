@@ -264,4 +264,9 @@
         /* background-color: #777; */
         margin-top: -60px;
       }
+
+      .gmap_canvas {
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+      }
 }
