@@ -221,5 +221,40 @@
         font-family: 'Fira Code', monospace;
       }
     
-      
+
+      .love-story {
+        background-color: #cebba2;
+      }
+
+      .love {
+        /* border: 1px solid red; */
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Fira Code', monospace;
+      }
+
+      p.moment {
+        color: #000;
+        font-size: 25px;
+        font-family: 'Fira Code', monospace;
+        margin-top: 70px;
+      }
+
+      .span-moment {
+        color: rgb(231, 93, 116);
+        font-size: 25px;
+        font-family: 'Fira Code', monospace;
+      }
+
+      .bridge-moment {
+        /* border: 1px solid red; */
+        height: 250px !important;
+        width: 235px;
+        
+      }
+
+      .bride-atas {
+        /* border: 1px solid red; */
+        margin-top: -65px;
+      }
 }
