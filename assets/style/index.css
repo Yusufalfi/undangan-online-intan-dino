@@ -228,7 +228,7 @@
 
       .love {
         /* border: 1px solid red; */
-        color: #fff;
+        color: rgb(231, 93, 116);
         font-size: 25px;
         font-family: 'Fira Code', monospace;
       }
@@ -237,7 +237,7 @@
         color: #000;
         font-size: 25px;
         font-family: 'Fira Code', monospace;
-        margin-top: 70px;
+        margin-top: 50px;
       }
 
       .span-moment {
@@ -256,6 +256,12 @@
       .bride-atas img {
         /* border: 1px solid red; */
         margin-top: -65px;
-        height: 250px;
+        height: 230px;
+      }
+
+
+      .content-acara {
+        /* background-color: #777; */
+        margin-top: -60px;
       }
 }
