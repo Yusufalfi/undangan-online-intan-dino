@@ -245,16 +245,17 @@
         font-size: 25px;
         font-family: 'Fira Code', monospace;
       }
-
+/* 
       .bridge-moment {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         height: 250px !important;
         width: 235px;
         
-      }
+      } */
 
-      .bride-atas {
+      .bride-atas img {
         /* border: 1px solid red; */
         margin-top: -65px;
+        height: 250px;
       }
 }
