@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/index.css">
 
+    <!-- swipper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
 
     <!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,7 +143,29 @@
         </div>
     </div>
 
-    <div class="love-story mb-5">
+    <section class="section slider-section mt-3 mb-5">
+      <div class="container slider-column">
+        <div class="swiper swiper-slider">
+          <div class="swiper-wrapper">
+            <img class="swiper-slide img-fluid" src="/assets/image/jawa-1.jpg" alt="Swiper" >
+            <img class="swiper-slide img-fluid" src="/assets/image/jawa-3.jpg" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/jawa-4.jpg" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/jawa-5.jpg" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/jawa-1.jpg" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/lampu-1-figma.png" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/lampu-figma.png" alt="Swiper">
+            <img class="swiper-slide" src="/assets/image/lampu-3.jpg" alt="Swiper">
+
+          </div>
+          <span class="swiper-pagination"></span>
+          <span class="swiper-button-prev"></span>
+          <span class="swiper-button-next"></span>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- <div class="love-story mb-5">
       <div class="container-fluid">
         <div class="row ">
           <div class="col-12 text-center">
@@ -180,7 +208,7 @@
         </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     
     <div class="content-acara">
@@ -276,6 +304,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
 
@@ -286,6 +315,51 @@
       }
 
       play()
+
+      const swiper = new Swiper(".swiper-slider", {
+  // Optional parameters
+  centeredSlides: true,
+  slidesPerView: 1,
+  grabCursor: true,
+  freeMode: false,
+  loop: true,
+  mousewheel: false,
+  keyboard: {
+    enabled: true
+  },
+
+  // Enabled autoplay mode
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: false,
+    clickable: true
+  },
+
+  // If we need navigation
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+
+  // Responsive breakpoints
+  breakpoints: {
+    540: {
+      slidesPerView: 1.25,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
+  }
+});
+
 
 
       // hitungan mundur

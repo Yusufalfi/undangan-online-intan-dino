@@ -292,5 +292,72 @@
         font-family: 'Fira Code', monospace;
       }
 
+      /* .slider-column {
+        border: 1px solid red;
+        height: ;
+      } */
+
+      /* .swiper-wrapper img {
+     width: 320px;
+     height: 213px;
+      } */
+
+
+      /* .swiper button-next::after button-prev::after {
+       
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.75rem;
+          font-weight: 800;
+          padding: 1rem;
+          width: 2rem;
+          height: 2rem;
+          opacity: 0.75;
+          border-radius: 50%;
+          color: white;
+          background: black;
+        }
+       */
+
+       .swiper-button-next::after {
+        /* border: 1px solid red !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: 800;
+        padding: 1rem;
+        width: 2rem;
+        height: 2rem;
+        opacity: 0.75;
+        border-radius: 50%;
+        color: white;
+        background: black; */
+       } 
+
+       /* .swiper-button-next {
+        background-image: url(/assets/image/left.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        width: 20px;
+      }
+       */
+      .swiper-button-next::after {
+        display: none;
+      }
+      .swiper-button-prev::after {
+        display: none;
+      }
+
+       /* .swiper-button-prev {
+        border: 1px solid green;
+        width: 20px !important;
+        height: 20px !important;
+       }
+       */
+
       
 }
