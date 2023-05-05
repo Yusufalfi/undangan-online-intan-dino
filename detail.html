@@ -33,7 +33,7 @@
       <source src="/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3" type="audio/mpeg">
       
     </audio> -->
-    <div class="play-audio container-audio"  onclick="toggleAudio()" >
+    <div class="play-audio container-audio" >
       <!-- <video controls muted autoplay>
         <source src="/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3"/>
      </video> -->
@@ -349,6 +349,19 @@ const container = document.querySelector('.container-audio');
 const audioDuration = document.querySelector('.duration');
 const playButton = document.querySelector('.play-button');
 let isPlaying = false;
+
+container.addEventListener("click", () => {
+  // console.log("oghet")
+  if (isPlaying) {
+		audio.pause()
+		isPlaying = false
+		playButton.classList.remove('playing')
+	} else {
+		audio.play()
+		isPlaying = true
+		playButton.classList.add('playing')
+	}
+})
 
 const toggleAudio = (event) => {
 	if (isPlaying) {
