@@ -373,7 +373,7 @@
         height: 60px;
         width: 60px;
         /* right: -150px; */
-        /* z-index: 1000; */
+        z-index: 1;
         /* top: 100vh; */
         text-align: center !important;
       }
@@ -409,16 +409,16 @@
         cursor: pointer;
       
         /* // play state */
-        border-style: solid;
-        border-width: 6px 0px 6px 8px;
+        /* border-style: solid; */
+        /* border-width: 6px 0px 6px 8px; */
         /* z-index: 99999 !important; */
         z-index: 99999 !important;
         pointer-events: auto;
       }
       
       .play-button.playing::before {
-        border-style: double;
-        border-width: 0px 0 0px 8px;
+        /* border-style: double; */
+        /* border-width: 0px 0 0px 8px; */
         /* z-index: 99999 !important; */
         z-index: 99999 !important;
         pointer-events: auto;
