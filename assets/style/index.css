@@ -410,15 +410,15 @@
       
         /* // play state */
         border-style: solid;
-        /* border-width: 6px 0px 6px 8px; */
+        border-width: 6px 0px 6px 8px;
         /* z-index: 99999 !important; */
         z-index: 99999 !important;
         pointer-events: auto;
       }
       
       .play-button.playing::before {
-        /* border-style: double; */
-        /* border-width: 0px 0 0px 8px; */
+        border-style: double;
+        border-width: 0px 0 0px 8px;
         /* z-index: 99999 !important; */
         z-index: 99999 !important;
         pointer-events: auto;
