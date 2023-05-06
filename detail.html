@@ -341,14 +341,14 @@
 
       // play()
 
-      var nothing = new Audio('/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3')
-window.onload = function() {
-nothing.play().then(function() {
-  // alert('Audio started unlocked!')
- }).catch(function(){
-  alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya! atau pencet tombol play')
- })
-}
+//       var nothing = new Audio('/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3')
+// window.onload = function() {
+// nothing.play().then(function() {
+  
+//  }).catch(function(){
+//   alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya! atau pencet tombol play')
+//  })
+// }
 
 const audio = document.querySelector('audio');
 const container = document.querySelector('.container-audio');
@@ -356,26 +356,66 @@ const audioDuration = document.querySelector('.duration');
 const playButton = document.querySelector('.play-button');
 let isPlaying = false;
 
-container.addEventListener("click", () => {
-  console.log("oghet")
-  if (isPlaying) {
-		audio.pause()
-		isPlaying = false
-		playButton.classList.remove('playing')
-    playButton.innerHTML = 'Play'
-	} else {
-		audio.play()
-		isPlaying = true
-		playButton.classList.add('playing')
-    playButton.innerHTML = 'Stop'
-	}
-})
+window.onload = function() {
+  // var nothing = new Audio('/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3')
+audio.play().then(function() {
+container.addEventListener('click', () => {
+      if(isPlaying) {
+        console.log("clicked")
+        audio.pause()
+        isPlaying = false
+        playButton.classList.remove('playing')
+        playButton.innerHTML = 'Play'
+      } else  {
+        console.log("ok")
+        audio.play()
+        isPlaying = true
+        playButton.classList.add('playing')
+        playButton.innerHTML = 'Stop'
+      }
+    })
 
-audio.onloadedmetadata = () => {
-	let minutes = Math.floor(audio.duration / 60)
-	let seconds = Math.floor(audio.duration - minutes * 60)
-	audioDuration.innerHTML = `${minutes}:${seconds}`
-}
+  }).catch(function(){
+   alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya! atau pencet tombol play')
+   })
+  }
+
+
+// var nothing = new Audio('/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3')
+// window.onload = function() {
+// nothing.play().then(function() {
+  
+//  }).catch(function(){
+//   alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya! atau pencet tombol play')
+//  })
+// }
+
+// const audio = document.querySelector('audio');
+// const container = document.querySelector('.container-audio');
+// const audioDuration = document.querySelector('.duration');
+// const playButton = document.querySelector('.play-button');
+// let isPlaying = false;
+
+// container.addEventListener("click", () => {
+//   console.log("oghet")
+//   if (isPlaying) {
+// 		audio.pause()
+// 		isPlaying = false
+// 		playButton.classList.remove('playing')
+//     playButton.innerHTML = 'Play'
+// 	} else {
+// 		audio.play()
+// 		isPlaying = true
+// 		playButton.classList.add('playing')
+//     playButton.innerHTML = 'Stop'
+// 	}
+// })
+
+// audio.onloadedmetadata = () => {
+// 	let minutes = Math.floor(audio.duration / 60)
+// 	let seconds = Math.floor(audio.duration - minutes * 60)
+// 	audioDuration.innerHTML = `${minutes}:${seconds}`
+// }
 
       const swiper = new Swiper(".swiper-slider", {
   // Optional parameters
