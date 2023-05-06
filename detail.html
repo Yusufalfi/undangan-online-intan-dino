@@ -40,7 +40,7 @@
         <source src="./assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
-      <div class="play-button">Play<span class=""></span></div>
+      <div class="play-button">play<span class=""></span></div>
     </div>
  
     </div>
@@ -357,17 +357,17 @@ const playButton = document.querySelector('.play-button');
 let isPlaying = false;
 
 container.addEventListener("click", () => {
-  // console.log("oghet")
+  console.log("oghet")
   if (isPlaying) {
 		audio.pause()
 		isPlaying = false
 		playButton.classList.remove('playing')
-    // playButton.innerHTML = 'Stop'
+    playButton.innerHTML = 'Play'
 	} else {
 		audio.play()
 		isPlaying = true
 		playButton.classList.add('playing')
-    // playButton.innerHTML = 'Play'
+    playButton.innerHTML = 'Stop'
 	}
 })
 

@@ -372,9 +372,9 @@
         border-radius: 50px; 
         height: 60px;
         width: 60px;
-        /* right: -150px; */
-        z-index: 1;
-        /* top: 100vh; */
+        right: -185px;
+        z-index: 1000;
+        top: 110vh;
         text-align: center !important;
       }
       
