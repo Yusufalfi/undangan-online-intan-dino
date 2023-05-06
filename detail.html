@@ -33,7 +33,7 @@
       <source src="/assets/image/Nuca & Mahalini - Janji Kita _ Lirik Lagu Indonesia.mp3" type="audio/mpeg">
       
     </audio> -->
-    <!-- <div class="play-audio container-audio" >
+    <div class="play-audio container-audio" >
       
      <div class="container">
       <audio preload="metadata" controls controlslist="nodownload">
@@ -43,7 +43,7 @@
       <div class="play-button">Play<span class=""></span></div>
     </div>
  
-    </div> -->
+    </div>
 
     <!-- <nav class="navbar navbar-expand-lg  ">
         <a class="navbar-brand mx-auto" href="#"> i & D</a>
@@ -346,36 +346,36 @@ window.onload = function() {
 nothing.play().then(function() {
   // alert('Audio started unlocked!')
  }).catch(function(){
-  alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya')
+  alert('aduh., seperti nya browser anda belum support music nih, coba buka di google chrome ya! atau pencet tombol play')
  })
 }
 
-// const audio = document.querySelector('audio');
-// const container = document.querySelector('.container-audio');
-// const audioDuration = document.querySelector('.duration');
-// const playButton = document.querySelector('.play-button');
-// let isPlaying = false;
+const audio = document.querySelector('audio');
+const container = document.querySelector('.container-audio');
+const audioDuration = document.querySelector('.duration');
+const playButton = document.querySelector('.play-button');
+let isPlaying = false;
 
-// container.addEventListener("click", () => {
-//   // console.log("oghet")
-//   if (isPlaying) {
-// 		audio.pause()
-// 		isPlaying = false
-// 		playButton.classList.remove('playing')
-//     // playButton.innerHTML = 'Stop'
-// 	} else {
-// 		audio.play()
-// 		isPlaying = true
-// 		playButton.classList.add('playing')
-//     // playButton.innerHTML = 'Play'
-// 	}
-// })
+container.addEventListener("click", () => {
+  // console.log("oghet")
+  if (isPlaying) {
+		audio.pause()
+		isPlaying = false
+		playButton.classList.remove('playing')
+    // playButton.innerHTML = 'Stop'
+	} else {
+		audio.play()
+		isPlaying = true
+		playButton.classList.add('playing')
+    // playButton.innerHTML = 'Play'
+	}
+})
 
-// audio.onloadedmetadata = () => {
-// 	let minutes = Math.floor(audio.duration / 60)
-// 	let seconds = Math.floor(audio.duration - minutes * 60)
-// 	audioDuration.innerHTML = `${minutes}:${seconds}`
-// }
+audio.onloadedmetadata = () => {
+	let minutes = Math.floor(audio.duration / 60)
+	let seconds = Math.floor(audio.duration - minutes * 60)
+	audioDuration.innerHTML = `${minutes}:${seconds}`
+}
 
       const swiper = new Swiper(".swiper-slider", {
   // Optional parameters
